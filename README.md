@@ -10,9 +10,7 @@ Installing docker and:
 
 •	using above command installed docker 
 
-•	usermod -aG docker ec2-user – docker added into ec2-user group
-
-installing docker compose:
+•	usermod -aG docker ec2-user – docker added into ec2-user groupinstalling docker compose:
 
 •	DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
