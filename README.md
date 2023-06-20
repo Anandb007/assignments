@@ -6,6 +6,7 @@ Question 1)	Check if docker and docker-compose is installed on the system. If no
 Installing docker and:
 
 •	Launching a ec2-instance & login into server
+
 •	yum install docker -y
 
 •	using above command installed docker 
@@ -15,9 +16,12 @@ Installing docker and:
 •	DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 
 •	mkdir -p $DOCKER_CONFIG/cli-plugins
+
 •	curl -SL https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
 apply executable permissions
+
 •	chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+
 •	docker compose version – to check docker compose available or not
 
 
@@ -25,8 +29,11 @@ apply executable permissions
 Question 6&7) Add another subcommand to enable/disable/delete the site (stopping/starting the containers)
 
 •	created a project directory mkdir my-lemp-stack
+
 •	cd my-lemp-stack
+
 •	in this directory, empty file created using touch docker_delete.sh and given the execution permissions usinf chmod +x docker_delete.sh
+
 •	./docker_delete.sh using this command executed the script
       
       
