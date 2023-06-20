@@ -26,6 +26,9 @@ apply executable permissions
 
 
 
+
+
+
 Question 6&7) Add another subcommand to enable/disable/delete the site (stopping/starting the containers)
 
 •	created a project directory mkdir my-lemp-stack
@@ -109,6 +112,9 @@ echo "Usage: $0 {enable|disable|delete}"
       exit 1
 
 esac
+
+
+
 
 
 
@@ -198,6 +204,9 @@ echo "WordPress site '$site_name' created successfully!"
 
       
       
+
+
+
 question 4) Create a /etc/hosts entry for example.com pointing to localhost. Here we are assuming the user has provided example.com as the site name.
 
 •	Created a server and login into terminal
@@ -214,6 +223,9 @@ Example 172.31.17.210   https://www.example.com and saved it and exit the file
 
      
       
+
+
+
 question 5) Prompt the user to open example.com in a browser if all goes well and the site is up and healthy.
 
       IN etc folder created a file touch open_website.sh
@@ -250,6 +262,9 @@ question 5) Prompt the user to open example.com in a browser if all goes well an
 
       
       
+
+
+
 question 3) 	It must be a LEMP stack running inside containers (Docker) and a docker-compose file is a must.
 
 •	Created a project directory: mkdir my-lemp-stack
