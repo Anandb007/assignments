@@ -91,23 +91,20 @@ case "$1" in
    
       enable_site
       
-      ;;
+     
    
    disable)
    
       disable_site
       
-      ;;
-   
+     
    delete)
    
       delete_site
       
-      ;;
+     
    
-   *)
-
-echo "Usage: $0 {enable|disable|delete}"
+   echo "Usage: $0 {enable|disable|delete}"
  
       exit 1
 
