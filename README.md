@@ -97,8 +97,8 @@ fi
 site_name="$1"
 wordpress_dir="/var/www/$site_name"
 db_name="$site_name"
-db_user="tom"     # Replace with your desired database username
-db_password="tomcat" # Replace with your desired database password
+db_user="tom"     
+db_password="tomcat" 
 # Download the latest WordPress version
 latest_version=$(curl -s https://wordpress.org/latest.tar.gz | tar -xzv -C /var/www/)
 # Create a new MySQL database for the WordPress site
