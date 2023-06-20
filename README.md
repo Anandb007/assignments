@@ -32,18 +32,18 @@ Question 6&7) Add another subcommand to enable/disable/delete the site (stopping
       #!/bin/bash
 start_site() {
    echo "Starting containers for the site..."
-   # Replace the following command with the appropriate command to start your containers
+
    docker compose up -d
 }
 stop_site() {
    echo "Stopping containers for the site..."
-   # Replace the following command with the appropriate command to stop your containers
+  
    docker compose down
 }
 delete_site() {
    echo "Deleting the site..."
    stop_site
-   # Replace the following command with the appropriate command to delete local files/directories
+
    rm -rf /path/to/site
 }
 enable_site() {
@@ -54,7 +54,7 @@ disable_site() {
    echo "Disabling the site..."
    stop_site
 }
-# Check the provided subcommand and call the corresponding function
+
 case "$1" in
    enable)
       enable_site
@@ -88,7 +88,7 @@ cd /etc/yum.repo.d/ in this path we can see tha mariadb repo
 
 
 #!/bin/bash
-# Check if the site name is provided as a command-line argument
+
 if [ -z "$1" ]; then
   echo "Error: Site name not provided. Usage: create_wp_site.sh <site-name>"
   exit 1
