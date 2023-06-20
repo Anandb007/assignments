@@ -9,6 +9,8 @@ Installing docker and:
 
 
 •	yum install docker -y
+
+
 •	using above command installed docker 
 •	usermod -aG docker ec2-user – docker added into ec2-user group
 
